@@ -1,0 +1,20 @@
+1. Purpose of Double Pointers:
+        Double pointers (**) are pointers that store the address of another pointer.
+
+
+2. Relation Between Pointers, Arrays, and Strings:
+    a#  Pointers and Arrays: Array name acts as a constant pointer to the first element (e.g., arr is equivalent to &arr[0]).
+        Pointer arithmetic allows accessing array elements (e.g., *(arr + i) is equivalent to arr[i]).
+        However, arrays are not pointers; arrays are fixed in size, while pointers can be reassigned.
+
+    b#  Pointers and Strings: Strings in C are arrays of characters terminated by a null character (\0).
+        A string literal (e.g., "hello") is stored in read-only memory, and its name is a pointer to the first character.
+        Pointer arithmetic can modify strings.
+
+
+3. Purpose of Pointer to Function: 
+    Allow functions to be passed around like variables.:
+
+    a#  Pass Functions as Arguments: You can pass a function to another function—like passing a callback.
+
+    b#  Store Functions in Arrays: You can use arrays of function pointers.
