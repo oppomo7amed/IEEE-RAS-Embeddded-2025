@@ -2,7 +2,7 @@
 
 int main()
 {
-    int A, Y,M,D;
+    int A,Y,M,D;
     printf("I'm gonna make a magic for you tell me your age in days and I'll give it back to you in \"Years,Months,Days\" form\n");
 
     scanf("%d", &A);
