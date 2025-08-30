@@ -1,0 +1,82 @@
+    1. What is a Data Structure?
+A data structure is a way of organizing, storing, and managing data so it can be used efficiently.
+It defines the relationship between data and the operations that can be performed on it.
+        Example: Think of a data structure like a toolbox — each tool (structure) is designed for a specific job.
+
+
+
+    2. Types of Data Structures
+Main Classification
+Primitive Data Structures → Basic building blocks (int, char, float, pointer).
+Non-Primitive Data Structures → More complex, built using primitives.
+Linear Data Structures → elements are arranged sequentially.
+Non-Linear Data Structures → elements have hierarchical/graph relationships.
+
+
+
+    3. Overview of Data Structures
+Linear Data Structures
+    Array
+Fixed-size, stores elements of same type.
+Random access possible.
+        Example: int arr[5] = {1,2,3,4,5};
+    Diagram:
+    Index:  0   1   2   3   4
+    Value:  10  20  30  40  50
+
+    Linked List
+Dynamic size, nodes connected by pointers.
+Efficient insertion/deletion.
+    Diagram (singly):
+[10|*] -> [20|*] -> [30|*] -> NULL
+
+    Stack
+LIFO (Last In First Out).
+Operations: push, pop, peek.
+    Diagram:
+    Top -> [30]
+            [20]
+            [10]
+
+    Queue
+FIFO (First In First Out).
+Operations: enqueue, dequeue.
+    Diagram:
+    Front -> [10] -> [20] -> [30] <- Rear
+    Non-Linear Data Structures
+
+    Tree
+Hierarchical structure with root + children.
+Example: Binary Tree (max 2 children per node).
+    Diagram:
+
+          1
+         / \
+        2   3
+       / \
+      4   5
+
+    Graph
+Set of nodes (vertices) connected by edges.
+Can be directed/undirected, weighted/unweighted.
+    Diagram:
+    A -- B
+    |  / |
+    C -- D
+
+
+
+    4. Linked List in Detail
+Types
+Singly Linked List → Each node points to next.
+Doubly Linked List → Each node points to next + previous.
+Circular Linked List → Last node points back to head.
+    Example Diagrams:
+    Singly: [10|*] -> [20|*] -> NULL
+    Doubly: NULL <- [10|*|*] <-> [20|*|*] -> NULL
+    Circular: [10|*] -> [20|*] -> [30|*] -> back to head
+    Applications
+    Dynamic memory allocation.
+    Undo functionality in editors.
+    Music/video playlists.
+    Implementation of stacks and queues.
